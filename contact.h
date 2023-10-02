@@ -3,7 +3,7 @@ typedef struct Contact{
 	char phoneNumber[15];
 	char emailAddress[20];
 	char birthDate[20];
-} contacts;
+} Contact;
 
 // Function to add a new contact. Maintain that phoneNumber must be unique
 void addContact(Contact contacts[], int *count, Contact newContact);
