@@ -5,10 +5,12 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	Contact contacts[100];
+	Contact cont[100];
 	int count=0;
 	int choice, searchChoice;
 	Contact newContact;
+	char name[20];
+	char phoneNumber[20];
 	do{
 		printf("\n1 - Add Contact\n");
 		printf("2 - Search by name\n");
@@ -22,30 +24,30 @@ int main(int argc, char *argv[]) {
 		switch(choice){
 			case 1:
 				printf("Enter name: ");
-				scanf("%[^\n]%*c", &contacts.name);
+				scanf("%s", &newContact.name);
 				printf("Enter phone number: ");
-				scanf("%s", &contacts.phone);
+				scanf("%s", &newContact.phoneNumber);
 				printf("Enter email address: ");
-				scanf("%s", &contacts.emailAddress);
+				scanf("%s", &newContact.emailAddress);
 				printf("Enter date of birth: ");
-				scanf("%s", &contacts.birthDate);
-				addContact(contacts, &count, newContact);
+				scanf("%s", &newContact.birthDate);
+				addContact(cont, &count, newContact);
 				break;
 			case 2:
 				printf("Choose if you want to search for number or name (1/2): ");
 				scanf("%d", &searchChoice);
 				if(searchChoice==1){
 					printf("Enter phone number to be searched: ");
-					scanf("%[^\n]%*c", &contacts.phoneNumber);
-					if(searchByName(phoneNumber, contacts, count)==1){
+					scanf("%[^\n]%*c", &phoneNumber);
+					if(searchByName(phoneNumber, cont, count)==1){
 						printf("The number exist.");
 					}else{
 						printf("The number does not exist");
 					}
 				} else if(searchChoice==2){
 					printf("Enter name to be searched: ");
-					scanf("%[^\n]%*c", &contacts.name);
-					if(searchByName(phoneNumber, contacts, count)==1){
+					scanf("%[^\n]%*c", &name);
+					if(searchByName(name, cont, count)==1){
 						printf("The name exist.");
 					}else{
 						printf("The name does not exist");
