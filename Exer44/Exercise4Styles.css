@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  /* Add other responsive styles here */
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+  /* Add other responsive styles here */
+}
+*{
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+body{
+  max-width: 1920px;
+  max-height: 1920px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-size: 16px;
+  padding: 0;
+  background-color: #040D12;
+}
+body::-webkit-scrollbar{
+  width: 0.75px
+}
+body::-webkit-scrollbar-track{
+  background: white;
+}
+body::-webkit-scrollbar{
+  background: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav li a{
+    font-weight: 400;
+    text-decoration: none;
+}
+nav{
+    margin: 0;
+    position: relative;
+}
+.links{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.links li {
+    display: inline-block;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+  
+.links li a:hover {
+  color: #93B1A6;
+}
+.logo{
+  cursor: pointer;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.introduction{
+  margin-top: 10px;
+  background-image: url(1stBG.png);
+}
+.Intro{
+  display: flex;
+  justify-content: space-around;
+}
+.pictureOfMe{
+  padding: 10px;
+}
+.name{
+  color: black; 
+}
+.nameAndPitch{
+  margin-top: 40vh;
+  margin-left: 10vw;
+  padding: 10px;
+  height: 300px;
+  width: 500px;
+  background-color: #93B1A6;
+  color: black;
+  border-radius: 10px;
+  
+}
+.skill{
+  background-image: url(2ndBG.png);
+  display: flex;
+  flex-direction: column;
+}
+.head{
+  font-size: 50px;
+  border-radius: 5px;
+}
+.skillsLanguages{
+  width: 75%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+meter {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.meterLabel{
+  text-align: center;
+  width: 200px ;
+}
+
+.AboutMe{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background-image: url(1stBG.png);
+}
+.hobbiesAndActivities{
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbiesAndActivities h1{
+  font-size: 30px;
+}
+.hobby{
+  list-style: square;
+  margin-left: 5px;
+}
+.hobbyy li{
+  list-style-type: '\2013';
+}
+.location{
+  margin-left: 10px;
+  padding: 10px
+}
+.address{
+  padding: 10px;
+  background-color: #93B1A6;
+  border-radius: 5px;
+}
+.moreAboutMe{
+  /*background-image: url(baliBG.svg);*/
+}
+.contactsAndSocials{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+
+}
+.contactMe .socials{
+  width: 40vw;
+  height: 40vh;
+}
+.social{
+  text-decoration: none;
+}
+.social li a{
+  transition: all 0.3s ease 0s;
+}
+.social li a:hover {
+  color: #93B1A6;
+}
+.info{
+  list-style: none;
+  padding-left: 0;
+}
